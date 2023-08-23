@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coders Marathon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="light-rainbow-header">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/codersmarathon-logo.png" alt="Brand Logo" class="img-fluid" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <form class="search-form d-flex">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                                <button class="btn-search" type="submit">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+                <div class="container mt-1">
+                    <div class="d-flex justify-content-between custom-button-group">
+                        <button class="btn btn-primary text-center" data-bs-toggle="modal"
+                            data-bs-target=".signinModal">
+                            Sign In
+                        </button>
+                        <button class="btn btn-secondary text-center" data-bs-toggle="modal" data-bs-target=".mapModal">
+                            Open Map
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal fade signinModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content custom-signin-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="signinModalLabel">Sign In</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3 custom-signin-form-group">
+                                        <input type="text" class="form-control" id="username" placeholder="Username" />
+                                    </div>
+                                    <div class="mb-3 custom-signin-form-group">
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Password" />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block custom-signin-btn">
+                                        Sign In
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content custom-map-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="mapModalLabel">Our Location</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe class="custom-map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.439783308812!2d73.7374697!3d18.5883055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbe7f4d41193%3A0xf38da8f70026fe67!2sCoders%20Marathon%20Pvt%20Ltd!5e0!3m2!1sen!2sus!4v1630230884333!5m2!1sen!2sus"
+                                    width="100%" height="400" style="border: 0" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="slider-section">
+                <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="slider-container">
+                                <img src="images/slider-image-1.jpg" alt="Image 1" class="slider-image" />
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Explore Cutting-Edge Tech</h2>
+                                    <p class="slider-text">
+                                        Dive into the world of cutting-edge technology and explore
+                                        the future of innovation.
+                                    </p>
+                                    <div class="slider-buttons">
+                                        <button class="btn btn-primary btn-lg">
+                                            Start Exploring
+                                        </button>
+                                        <button class="btn btn-secondary btn-lg">
+                                            Learn More
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slider-indicators">
+                                    <span class="indicator active"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slider-container">
+                                <img src="images/slide-image-2.jpg" alt="Image 2" class="slider-image" />
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Code Your Dreams</h2>
+                                    <p class="slider-text">
+                                        Embark on coding adventures and bring your innovative
+                                        dreams to life.
+                                    </p>
+                                    <div class="slider-buttons">
+                                        <button class="btn btn-primary btn-lg">
+                                            Start Coding
+                                        </button>
+                                        <button class="btn btn-secondary btn-lg">Explore</button>
+                                    </div>
+                                </div>
+                                <div class="slider-indicators">
+                                    <span class="indicator"></span>
+                                    <span class="indicator active"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slider-container">
+                                <img src="images/slide-image-3.jpg" alt="Image 3" class="slider-image" />
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Tech Mastery</h2>
+                                    <p class="slider-text">
+                                        Master the art of coding and technology to shape the
+                                        digital world.
+                                    </p>
+                                    <div class="slider-buttons">
+                                        <button class="btn btn-primary btn-lg">Explore</button>
+                                        <button class="btn btn-secondary btn-lg">Level Up</button>
+                                    </div>
+                                </div>
+                                <div class="slider-indicators">
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator active"></span>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slider-container">
+                                <img src="images/slide-image-4.jpg" alt="Image 4" class="slider-image" />
+                                <div class="slider-content">
+                                    <h2 class="slider-heading">Innovative Solutions</h2>
+                                    <p class="slider-text">
+                                        Indulge in the world of innovative solutions and
+                                        groundbreaking technology.
+                                    </p>
+                                    <div class="slider-buttons">
+                                        <button class="btn btn-primary btn-lg">Explore</button>
+                                        <button class="btn btn-secondary btn-lg">
+                                            Learn More
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slider-indicators">
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator active"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageSlider"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="video-section">
+                <div class="row">
+                    <div class="col-md-6 video-container">
+                        <div class="video-responsive">
+                            <iframe src="https://www.youtube.com/embed/YQRHrco73g4" frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6 video-container">
+                        <div class="video-responsive">
+                            <iframe src="https://www.youtube.com/embed/6RLLOEzdxsM" frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="premium-tab text-center">
+                <ul class="nav nav-tabs justify-content-around">
+                    <li class="nav-item nav-item-spacing">
+                        <a class="nav-link active" data-bs-toggle="tab" href=".tab1">FORM</a>
+                    </li>
+                    <li class="nav-item nav-item-spacing">
+                        <a class="nav-link" data-bs-toggle="tab" href=".tab2">ARTICLE</a>
+                    </li>
+                    <li class="nav-item nav-item-spacing">
+                        <a class="nav-link" data-bs-toggle="tab" href=".tab3">IMAGE</a>
+                    </li>
+                    <li class="nav-item nav-item-spacing">
+                        <a class="nav-link" data-bs-toggle="tab" href=".tab4">VIDEO</a>
+                    </li>
+                </ul>
+                <div class="tab-content premium-tab-content">
+                    <div class="tab-pane fade show active tab1">
+                        <form class="tab-form">
+                            <h3>Please Register</h3>
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="tel" placeholder="Phone Number" />
+                            <input type="text" placeholder="City" />
+                            <button class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade tab2">
+                        <h3 class="tab-heading">Discover the Power of Premium</h3>
+                        <p>
+                            Step into a realm of unparalleled possibilities with our premium
+                            service. As a valued member, you gain access to an extraordinary
+                            array of benefits that redefine your experience. Dive deep into
+                            our curated collection of premium content, meticulously crafted
+                            to inspire and engage. Elevate your journey by taking advantage
+                            of advanced customization features, allowing you to tailor your
+                            interactions to your unique preferences. With prioritized
+                            customer support, your inquiries receive expedited attention,
+                            ensuring a seamless and satisfying experience. But that's not
+                            all—our premium members are the first to explore cutting-edge
+                            features before anyone else, giving you a head start in
+                            embracing innovation. Join us in exclusive community events,
+                            fostering connections and interactions with like-minded
+                            individuals who share your passion. Your premium journey starts
+                            here, and it's a journey like no other.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade tab3">
+                        <img class="img-fluid" src="images/tab-image-1.jpg" alt="Image" />
+                    </div>
+                    <div class="tab-pane fade tab4">
+                        <div class="tab-video">
+                            <iframe src="https://www.youtube.com/embed/YQRHrco73g4" frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="footer-section">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <a href="#"><img src="images/codersmarathon-logo.png" alt="Company Logo"
+                                class="img-fluid mb-3" /></a>
+                        <p>
+                            <strong>Address: </strong>Office No 3, Solitaire Building,
+                            Kalyani Nagar, Next to Aga Khan Palace, Nagar Rd, Pune 411006
+                        </p>
+                        <p>
+                            <strong>Phone: </strong><a href="tel:+918411881184">+ 91 8411881184</a>
+                        </p>
+                        <p>
+                            <strong>Email: </strong><a href="mailto:info@codersmarathon.com">info@codersmarathon.com</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5>Main Menu</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Mission & Vision</a></li>
+                            <li><a href="#">Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5>About</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Clients</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5>Resources</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Community Guidelines</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="text-center policy-terms">
+                    <a href="#">Privacy Policy</a> <span class="pipe">|</span>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+                <p class="text-center">
+                    &copy; 2023 Your Company. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
